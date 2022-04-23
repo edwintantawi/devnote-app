@@ -1,0 +1,11 @@
+{
+  "TR_LANGUAGE": "Bahasa",
+  "TR_SETTINGS": "Pengaturan",
+  "TR_COLOR_SCHEME": {
+    "BLUE": "Biru langit",
+    "GREEN": "Hijau rumput",
+    "PURPLE": "ungu anggur",
+    "PINK": "Merah jambu manis"
+  },
+  "TR_EMPTY_STATE": "Kamu belum membuat catatan apa pun di sini, ayo buat.."
+}
