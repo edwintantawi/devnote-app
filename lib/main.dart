@@ -41,6 +41,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: createMaterialColor(
           uiProvider.colorSchemaList[uiProvider.colorSchemeIndex].color,
         ),
+        scaffoldBackgroundColor: Colors.white,
       ),
       home: const HomeScreen(),
     );

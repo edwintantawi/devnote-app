@@ -1,5 +1,6 @@
 import 'package:devnote/components/app_shell.dart';
 import 'package:devnote/components/empty_state.dart';
+import 'package:devnote/screens/editor_screen.dart';
 import 'package:devnote/screens/settings_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,12 @@ class HomeScreen extends StatelessWidget {
       fab: FloatingActionButton(
         elevation: 0,
         child: const Icon(Icons.add),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => EditorScreen()),
+          );
+        },
       ),
       body: const Center(
         child: EmptyState(),

@@ -7,5 +7,10 @@
     "PURPLE": "Grape purple",
     "PINK": "Sweet pink"
   },
-  "TR_EMPTY_STATE": "You haven't made any notes here yet, let's make one.."
+  "TR_EMPTY_STATE": "You haven't made any notes here yet, let's make one..",
+  "TR_NOTE": "Note",
+  "TR_CREATE_NOTE": "Create note",
+  "TR_EDIT_NOTE": "Edit note",
+  "TR_TITLE": "Title",
+  "TR_DESCRIPTION": "Descriptions"
 }
