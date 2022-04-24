@@ -13,11 +13,13 @@ class TextEditor extends StatelessWidget {
   Widget build(BuildContext context) {
     final editorProvider = Provider.of<EditorProvider>(context);
 
+    final focusNode = FocusNode();
+
     return QuillEditor(
       controller: editorProvider.editorController,
       scrollController: ScrollController(),
       scrollable: true,
-      focusNode: editorProvider.focusNode,
+      focusNode: focusNode,
       autoFocus: false,
       readOnly: false,
       placeholder: 'TR_NOTE'.tr(),

@@ -58,56 +58,53 @@ class EditorScreen extends StatelessWidget {
           },
         ),
       ],
-      body: RawKeyboardListener(
-        focusNode: FocusNode(),
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 8,
-              ),
-              child: Column(
-                children: [
-                  TextField(
-                    style: const TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.w500,
-                    ),
-                    controller: editorProvider.titleController,
-                    decoration: InputDecoration(
-                      contentPadding: const EdgeInsets.symmetric(vertical: 8),
-                      isCollapsed: true,
-                      hintText: 'TR_TITLE'.tr(),
-                      hintStyle: TextStyle(color: Colors.grey[400]),
-                      border: InputBorder.none,
-                    ),
-                  ),
-                  TextField(
-                    style: const TextStyle(fontSize: 14, color: Colors.grey),
-                    controller: editorProvider.descriptionController,
-                    decoration: InputDecoration(
-                      contentPadding: const EdgeInsets.only(top: 2, bottom: 8),
-                      isCollapsed: true,
-                      hintText: 'TR_DESCRIPTION'.tr(),
-                      hintStyle: TextStyle(color: Colors.grey[400]),
-                      border: InputBorder.none,
-                    ),
-                  ),
-                  const Divider(thickness: 1),
-                ],
-              ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 8,
             ),
-            Expanded(
-              flex: 15,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: const TextEditor(),
-              ),
+            child: Column(
+              children: [
+                TextField(
+                  style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                  ),
+                  controller: editorProvider.titleController,
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    isCollapsed: true,
+                    hintText: 'TR_TITLE'.tr(),
+                    hintStyle: TextStyle(color: Colors.grey[400]),
+                    border: InputBorder.none,
+                  ),
+                ),
+                TextField(
+                  style: const TextStyle(fontSize: 14, color: Colors.grey),
+                  controller: editorProvider.descriptionController,
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.only(top: 2, bottom: 8),
+                    isCollapsed: true,
+                    hintText: 'TR_DESCRIPTION'.tr(),
+                    hintStyle: TextStyle(color: Colors.grey[400]),
+                    border: InputBorder.none,
+                  ),
+                ),
+                const Divider(thickness: 1),
+              ],
             ),
-            const ToolbarEditor()
-          ],
-        ),
+          ),
+          Expanded(
+            flex: 15,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: const TextEditor(),
+            ),
+          ),
+          const ToolbarEditor()
+        ],
       ),
     );
   }
