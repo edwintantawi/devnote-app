@@ -9,8 +9,8 @@ class LanguagesDropdown extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Image.network(
-          'https://countryflagsapi.com/png/${context.locale.countryCode}',
+        Image.asset(
+          'assets/images/${context.locale.countryCode}.png',
           height: 28,
           width: 40,
           fit: BoxFit.cover,
