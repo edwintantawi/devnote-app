@@ -9,6 +9,7 @@ class NoteProvider extends ChangeNotifier {
 
   void addNote(NoteModel newNote) {
     _notes.add(newNote);
+
     notifyListeners();
   }
 
@@ -22,7 +23,9 @@ class NoteProvider extends ChangeNotifier {
 
   void deleteNote(String? noteId) {
     int noteIndex = _notes.indexWhere((note) => note.id == noteId);
+    if (noteIndex == -1) return;
     _notes.removeAt(noteIndex);
+
     notifyListeners();
   }
 }

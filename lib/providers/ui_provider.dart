@@ -18,7 +18,7 @@ class UIProvider extends ChangeNotifier {
     ),
     ColorSchemeData(
       name: 'TR_COLOR_SCHEME.PINK',
-      color: Colors.pink,
+      color: Colors.pink[300]!,
     ),
   ];
 

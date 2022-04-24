@@ -17,7 +17,7 @@ class SettingsScreen extends StatelessWidget {
     final uiProvider = Provider.of<UIProvider>(context);
 
     return AppShell(
-      title: const Text('TR_SETTINGS').tr(),
+      title: Text('TR_SETTINGS'.tr()),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

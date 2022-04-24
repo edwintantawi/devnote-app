@@ -27,7 +27,7 @@ class LanguagesDropdown extends StatelessWidget {
         const SizedBox(width: 8),
         Expanded(
           child: DropdownButtonFormField(
-            hint: const Text('TR_LANGUAGE').tr(),
+            hint: Text('TR_LANGUAGE'.tr()),
             decoration: const InputDecoration(
               contentPadding: EdgeInsets.symmetric(
                 vertical: 12,
@@ -40,7 +40,7 @@ class LanguagesDropdown extends StatelessWidget {
             value: context.locale,
             items: context.supportedLocales.map((language) {
               return DropdownMenuItem(
-                child: Text(language.toStringWithSeparator(separator: ' ')),
+                child: Text(language.toString().tr()),
                 value: language,
               );
             }).toList(),

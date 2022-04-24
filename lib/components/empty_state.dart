@@ -19,12 +19,12 @@ class EmptyState extends StatelessWidget {
         SizedBox(
           width: 250,
           child: Text(
-            'TR_EMPTY_STATE',
+            'TR_EMPTY_STATE'.tr(),
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.grey[300],
             ),
-          ).tr(),
+          ),
         ),
       ],
     );
