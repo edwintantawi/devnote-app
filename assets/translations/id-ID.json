@@ -2,6 +2,7 @@
   "TR_LANGUAGE": "Bahasa",
   "TR_SETTINGS": "Pengaturan",
   "TR_COLOR_SCHEME": {
+    "TITLE": "Skema warna",
     "BLUE": "Biru langit",
     "GREEN": "Hijau rumput",
     "PURPLE": "ungu anggur",
@@ -12,5 +13,8 @@
   "TR_CREATE_NOTE": "Buat catatan",
   "TR_EDIT_NOTE": "Ubah catatan",
   "TR_TITLE": "Judul",
-  "TR_DESCRIPTION": "Deskripsi"
+  "TR_DESCRIPTION": "Deskripsi",
+  "TR_UNTITLED": "Tanpa judul",
+  "TR_NO_DESCRIPTION": "Tanpa deskripsi",
+  "TR_SAVE": "Simpan"
 }

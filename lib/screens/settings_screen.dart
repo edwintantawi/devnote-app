@@ -23,7 +23,7 @@ class SettingsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Section(
-              title: 'Color scheme',
+              title: 'TR_COLOR_SCHEME.TITLE'.tr(),
               child: Column(
                 children:
                     uiProvider.colorSchemaList.mapIndexed((index, colorScheme) {

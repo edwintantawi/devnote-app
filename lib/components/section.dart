@@ -25,9 +25,8 @@ class Section extends StatelessWidget {
           child: Text(
             title,
             style: TextStyle(
-              fontSize: 16,
+              fontSize: 14,
               color: Colors.grey[400],
-              fontWeight: FontWeight.bold,
             ),
           ),
         ),

@@ -1,7 +1,10 @@
+import 'package:flutter_quill/flutter_quill.dart';
+
 class NoteModel {
+  String id;
   String? title;
   String? description;
-  String? data;
+  Delta? data;
 
-  NoteModel({this.title, this.description, this.data});
+  NoteModel({required this.id, this.title, this.description, this.data});
 }

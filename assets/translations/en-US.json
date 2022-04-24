@@ -2,6 +2,7 @@
   "TR_LANGUAGE": "Language",
   "TR_SETTINGS": "Settings",
   "TR_COLOR_SCHEME": {
+    "TITLE": "Color scheme",
     "BLUE": "Sky blue",
     "GREEN": "Grass green",
     "PURPLE": "Grape purple",
@@ -12,5 +13,8 @@
   "TR_CREATE_NOTE": "Create note",
   "TR_EDIT_NOTE": "Edit note",
   "TR_TITLE": "Title",
-  "TR_DESCRIPTION": "Descriptions"
+  "TR_DESCRIPTION": "Descriptions",
+  "TR_UNTITLED": "Untitled",
+  "TR_NO_DESCRIPTION": "No description",
+  "TR_SAVE": "Save"
 }

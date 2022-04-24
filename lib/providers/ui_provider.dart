@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:devnote/models/color_scheme_data_model.dart';
 
 class UIProvider extends ChangeNotifier {

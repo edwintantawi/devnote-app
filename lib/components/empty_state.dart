@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:easy_localization/easy_localization.dart';
 
 class EmptyState extends StatelessWidget {
@@ -17,11 +18,11 @@ class EmptyState extends StatelessWidget {
         const SizedBox(height: 8),
         SizedBox(
           width: 250,
-          child: const Text(
+          child: Text(
             'TR_EMPTY_STATE',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.grey,
+              color: Colors.grey[300],
             ),
           ).tr(),
         ),
