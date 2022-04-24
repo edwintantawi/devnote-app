@@ -7,25 +7,49 @@ class LanguagesDropdown extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DropdownButtonFormField(
-      hint: const Text('TR_LANGUAGE').tr(),
-      decoration: const InputDecoration(
-        contentPadding: EdgeInsets.all(16),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
+    return Row(
+      children: [
+        Image.network(
+          'https://countryflagsapi.com/png/${context.locale.countryCode}',
+          height: 28,
+          width: 40,
+          fit: BoxFit.cover,
+          frameBuilder: (BuildContext context, Widget widget, _, __) {
+            return Container(
+              height: null,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey[300]!),
+              ),
+              child: widget,
+            );
+          },
         ),
-      ),
-      value: context.locale,
-      items: context.supportedLocales.map((language) {
-        return DropdownMenuItem(
-          child: Text(language.toStringWithSeparator(separator: ' ')),
-          value: language,
-        );
-      }).toList(),
-      onChanged: (newValue) {
-        context.setLocale(newValue.toString().toLocale());
-        // provider.setSelectedItem(newValue as String);
-      },
+        const SizedBox(width: 8),
+        Expanded(
+          child: DropdownButtonFormField(
+            hint: const Text('TR_LANGUAGE').tr(),
+            decoration: const InputDecoration(
+              contentPadding: EdgeInsets.symmetric(
+                vertical: 12,
+                horizontal: 16,
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(8)),
+              ),
+            ),
+            value: context.locale,
+            items: context.supportedLocales.map((language) {
+              return DropdownMenuItem(
+                child: Text(language.toStringWithSeparator(separator: ' ')),
+                value: language,
+              );
+            }).toList(),
+            onChanged: (newValue) {
+              context.setLocale(newValue.toString().toLocale());
+            },
+          ),
+        ),
+      ],
     );
   }
 }
