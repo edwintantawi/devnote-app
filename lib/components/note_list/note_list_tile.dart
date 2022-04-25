@@ -5,6 +5,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:devnote/models/note_model.dart';
 import 'package:devnote/providers/editor_provider.dart';
 import 'package:devnote/screens/editor_screen.dart';
+import 'package:devnote/components/buttons/toggle_bookmark_icon_button.dart';
 
 class NoteListTile extends StatelessWidget {
   final NoteModel note;
@@ -21,10 +22,7 @@ class NoteListTile extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (_) => EditorScreen(
-              title: 'TR_NOTE'.tr(),
-              note: note,
-            ),
+            builder: (_) => EditorScreen(title: 'TR_NOTE'.tr(), note: note),
           ),
         );
       },
@@ -39,6 +37,8 @@ class NoteListTile extends StatelessWidget {
             : note.description!,
       ),
       trailing: const Icon(Icons.arrow_right),
+      leading: ToggleBookmarkIconButton(note: note),
+      minLeadingWidth: 32,
     );
   }
 }

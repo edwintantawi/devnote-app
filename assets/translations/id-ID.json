@@ -1,6 +1,6 @@
 {
-  "en_US": "Inggris US",
-  "id_ID": "Indonesia",
+  "en_US": "US - Inggris",
+  "id_ID": "ID - Indonesia",
   "TR_LANGUAGE": "Bahasa",
   "TR_SETTINGS": "Pengaturan",
   "TR_COLOR_SCHEME": {
@@ -10,7 +10,10 @@
     "PURPLE": "ungu anggur",
     "PINK": "Merah jambu manis"
   },
-  "TR_EMPTY_STATE": "Kamu belum membuat catatan apa pun di sini, ayo buat..",
+  "TR_EMPTY": {
+    "NOTES": "Kamu belum membuat catatan apa pun di sini, ayo buat..",
+    "BOOKMARK": "Kamu belum memiliki catatan yang ditandai, temukan catatan dengan mudah dengan penanda!"
+  },
   "TR_NOTE": "Catatan",
   "TR_CREATE_NOTE": "Buat catatan",
   "TR_EDIT_NOTE": "Ubah catatan",
@@ -18,5 +21,6 @@
   "TR_DESCRIPTION": "Deskripsi",
   "TR_UNTITLED": "Tanpa judul",
   "TR_NO_DESCRIPTION": "Tanpa deskripsi",
-  "TR_SAVE": "Simpan"
+  "TR_SAVE": "Simpan",
+  "TR_BOOKMARK": "Penanda catatan"
 }

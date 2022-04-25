@@ -4,9 +4,12 @@ import 'package:provider/provider.dart';
 import 'package:devnote/providers/note_provider.dart';
 
 class DeleteNoteIconButton extends StatelessWidget {
-  final String? noteId;
+  final String noteId;
 
-  const DeleteNoteIconButton({Key? key, this.noteId}) : super(key: key);
+  const DeleteNoteIconButton({
+    Key? key,
+    required this.noteId,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

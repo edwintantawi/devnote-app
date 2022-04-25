@@ -1,6 +1,3 @@
-import 'package:devnote/components/buttons/delete_note_icon_button.dart';
-import 'package:devnote/components/buttons/save_note_text_button.dart';
-import 'package:devnote/components/editor/input_editor.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -8,9 +5,12 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:devnote/components/editor/toolbar_editor.dart';
 import 'package:devnote/models/note_model.dart';
 import 'package:devnote/providers/editor_provider.dart';
-import 'package:devnote/providers/note_provider.dart';
 import 'package:devnote/components/editor/text_editor.dart';
 import 'package:devnote/components/app_shell.dart';
+import 'package:devnote/components/buttons/delete_note_icon_button.dart';
+import 'package:devnote/components/buttons/save_note_text_button.dart';
+import 'package:devnote/components/buttons/toggle_bookmark_fab.dart';
+import 'package:devnote/components/editor/input_editor.dart';
 
 class EditorScreen extends StatelessWidget {
   final NoteModel? note;
@@ -27,11 +27,9 @@ class EditorScreen extends StatelessWidget {
       title: Text(title),
       actions: [
         note?.id != null
-            ? DeleteNoteIconButton(
-                noteId: note?.id,
-              )
+            ? DeleteNoteIconButton(noteId: note!.id)
             : const SizedBox.shrink(),
-        SaveNoteTextButton(noteId: note?.id),
+        SaveNoteTextButton(note: note),
       ],
       body: Column(
         children: [
@@ -66,6 +64,7 @@ class EditorScreen extends StatelessWidget {
           const ToolbarEditor()
         ],
       ),
+      fab: note?.id != null ? ToggleBookmarkFAB(note: note!) : null,
     );
   }
 }

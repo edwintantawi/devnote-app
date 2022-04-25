@@ -5,6 +5,13 @@ class NoteModel {
   String? title;
   String? description;
   Delta? data;
+  bool isBookmarked;
 
-  NoteModel({required this.id, this.title, this.description, this.data});
+  NoteModel({
+    required this.id,
+    this.title,
+    this.description,
+    this.data,
+    required this.isBookmarked,
+  });
 }

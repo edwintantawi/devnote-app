@@ -1,6 +1,6 @@
 {
-  "en_US": "English US",
-  "id_ID": "Indonesia",
+  "en_US": "US - English",
+  "id_ID": "ID - Indonesia",
   "TR_LANGUAGE": "Language",
   "TR_SETTINGS": "Settings",
   "TR_COLOR_SCHEME": {
@@ -10,7 +10,10 @@
     "PURPLE": "Grape purple",
     "PINK": "Sweet pink"
   },
-  "TR_EMPTY_STATE": "You haven't made any notes here yet, let's make one..",
+  "TR_EMPTY": {
+    "NOTES": "You haven't made any notes here yet, let's make one..",
+    "BOOKMARK": "You don't have bookmarked notes yet, find notes easily with bookmarks!"
+  },
   "TR_NOTE": "Note",
   "TR_CREATE_NOTE": "Create note",
   "TR_EDIT_NOTE": "Edit note",
@@ -18,5 +21,6 @@
   "TR_DESCRIPTION": "Descriptions",
   "TR_UNTITLED": "Untitled",
   "TR_NO_DESCRIPTION": "No description",
-  "TR_SAVE": "Save"
+  "TR_SAVE": "Save",
+  "TR_BOOKMARK": "Bookmark notes"
 }

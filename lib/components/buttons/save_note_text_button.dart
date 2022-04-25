@@ -8,9 +8,9 @@ import 'package:devnote/providers/editor_provider.dart';
 import 'package:devnote/providers/note_provider.dart';
 
 class SaveNoteTextButton extends StatelessWidget {
-  final String? noteId;
+  final NoteModel? note;
 
-  const SaveNoteTextButton({Key? key, this.noteId}) : super(key: key);
+  const SaveNoteTextButton({Key? key, this.note}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +21,14 @@ class SaveNoteTextButton extends StatelessWidget {
       Uuid uuid = const Uuid();
 
       NoteModel newNote = NoteModel(
-        id: noteId ?? uuid.v4(),
+        id: note?.id ?? uuid.v4(),
         title: editorProvider.titleController.text,
         description: editorProvider.descriptionController.text,
         data: editorProvider.editorController.document.toDelta(),
+        isBookmarked: note?.isBookmarked ?? false,
       );
 
-      if (noteId == null) {
+      if (note == null) {
         noteProvider.addNote(newNote);
       } else {
         noteProvider.updateNote(newNote);
