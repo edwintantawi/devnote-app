@@ -16,7 +16,7 @@ class BookmarkScreen extends StatelessWidget {
 
     return AppShell(
       title: Text('TR_BOOKMARK'.tr()),
-      body: noteProvider.notes.isNotEmpty
+      body: noteProvider.bookmarkedNotes.isNotEmpty
           ? NoteListView(notes: noteProvider.bookmarkedNotes)
           : Center(
               child: EmptyState(
