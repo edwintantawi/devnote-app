@@ -1,16 +1,12 @@
-# devnote
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# DevNote app
+Application build with [Flutter](https://flutter.dev/).
+## Screenshot
+![Home screen - empty](/docs/screenshots/result_home-empty.jpg)
+![Bookmark screen - empty](/docs/screenshots/result_bookmark-empty.jpg)
+![Create note screen](/docs/screenshots/result_create-note-empty.jpg)
+![Edit note screen](/docs/screenshots/result_edit-note.jpg)
+![Home screen with items](/docs/screenshots/result_home-3-note-blue.jpg)
+![Bookmark screen with items](/docs/screenshots/result_bookmark-1-blue.jpg)
+![Settings - blue, en-US](/docs/screenshots/result_settings-default.jpg)
+![Settings - pink, en-US](/docs/screenshots/result_settings-pink-us.jpg)
+![Settings - green, id-ID](/docs/screenshots/result_settings-green-id.jpg)
